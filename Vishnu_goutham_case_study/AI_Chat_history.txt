@@ -1,0 +1,14 @@
+Designed two agents: Sentiment Agent and Routing Agent.
+Originally planned to use OpenAI API with structured prompts via pydantic_ai.
+Encountered OpenAI quota exhaustion.
+Pivoted to an offline implementation using TextBlob for sentiment analysis.
+Sentiment was extracted using rule-based keyword matching.
+Routing Agent used message content, urgency, and metadata to assign team and priority.
+
+Testing
+
+Used the 5 case study tickets from the challenge PDF as test input.
+Iterated on sentiment and routing logic after reviewing outputs.
+Added more keywords to better detect urgency and intent.
+Verified routing for each case and adjusted logic where needed.
+Built fallback-friendly code that works even without internet or LLMs.

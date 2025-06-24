@@ -1,0 +1,8 @@
+1. OpenAI API quota was exhausted – could not use GPT-based LLMs live.
+2. Pydantic AI is not publicly available – fallback to custom Python classes and functions.
+3. TextBlob failed to capture strong emotional tone like “completely broken” (SUP-001).
+4. Initial routing logic missed “feature request” in SUP-003 – routed to support instead of product.
+5. SUP-005 (security issue) incorrectly routed to engineering at first – needed escalation.
+6. Initial urgency detection was too shallow – had to improve keyword coverage.
+7. Neutral sentiment was returned for several clearly negative tickets – LLMs would perform better.
+8. Lack of LLM means no reasoning or context-based routing, only keyword patterning.
